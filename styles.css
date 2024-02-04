@@ -1,4 +1,5 @@
-/* Custom properties/variables */
+/* custom properties/variables */
+
 :root {
     --primary-color: #112957;
     --secondary-color: #A8AABC;
@@ -6,7 +7,8 @@
     --text-color: #F1F1E6;
 }
 
-/* Common styles */
+/* common styles */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -42,6 +44,10 @@ h2 {
     font-style: normal;
 }
 
+p {
+    font-size: 3rem;
+}
+
 ul {
     list-style: none;
 }
@@ -63,10 +69,40 @@ a:active {
 img {
     display: block;
     /*width: 100%;*/
-  }
+}
 
 .wrapper {
     max-width: 1220px;
     width: 100%;
     margin: auto;
+}
+
+/* header styles */
+
+.header {
+    padding: 42px 0px;
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 0 #747687;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation-link {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.navigation-link>li>a {
+    color: var(--addition-color);
+    font-size: 3rem;
+}
+
+.navigation-link>li:nth-child(2) {
+    margin-left: 9rem;
+    margin-right: 9rem;
 }
