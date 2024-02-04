@@ -30,11 +30,13 @@ body {
 }
 
 h1 {
+    margin: 0 auto;
     width: 55rem;
     color: var(--addition-color);
     font-size: 4.5rem;
     font-weight: 700;
     font-style: normal;
+    text-align: center;
 }
 
 h2 {
@@ -46,6 +48,8 @@ h2 {
 
 p {
     font-size: 3rem;
+    text-indent: 25px;
+    text-align: justify;
 }
 
 ul {
@@ -80,7 +84,7 @@ img {
 /* header styles */
 
 .header {
-    padding: 42px 0px;
+    padding: 42px 0;
     background-color: var(--secondary-color);
     box-shadow: 0 2px 0 #747687;
     position: fixed;
@@ -105,4 +109,37 @@ img {
 .navigation-link>li:nth-child(2) {
     margin-left: 9rem;
     margin-right: 9rem;
+}
+
+/* welcome section styles */
+
+.welcome {
+    padding: 8rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.avatar {
+    width: 30rem;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px 4px var(--secondary-color);
+}
+
+.welcome-info {
+    padding: 8rem 0;
+    width: 50%;
+}
+
+.welcome-paragraph {
+    padding-top: 40px;
+    font-style: italic;
+}
+
+.welcome-paragraph.colored {
+    color: var(--addition-color);
+    font-size: 4rem;
+    padding-top: 15px;
+    text-indent: inherit;
+    text-align: center;
 }
