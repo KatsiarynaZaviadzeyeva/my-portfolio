@@ -7,10 +7,115 @@
     <title>Personal Portfolio</title>
     <link rel="shortcut icon" href="./assets/icons/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/41341f7984.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div class="wrapper">
 
+        <header class="header">
+            <nav id="navbar" class="navigation">
+                <ul class="navigation-link">
+                    <li><a href="#welcom-section">About</a></li>
+                    <li><a href="#projects">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section id="welcom-section" class="welcom">
+                <div class="welcom-photo">
+                    <img src="./assets/pictures/my_photo.jpg" alt="photo of Katsiaryna" width="10%">
+                </div>
+                <div class="welcom-info">
+                    <h1 class="welcom-title">Hello, I am Katsiaryna</h1>
+                    <p class="welcom-paragraph">
+                        a web developer
+                    </p>
+                    <p class="welcom-paragraph about">
+                        I am convinced, life is a constant movement that never stop. Therefore, to move forward and
+                        evolve every day I try to be better than I was yesterday by learning something new. Web
+                        development is an interesting and demanded work there is always something new to learn, to
+                        improve myself, to create the better version of mе. I have always enjoyed making something
+                        beautiful and useful. For me, coding is a kind of magic in the modern world.
+                    </p>
+                </div>
+            </section>
+            <section id="projects" class="projects">
+                <h2 class="project-tile">These are some of my projects</h2>
+                <div class="projects-item">
+                    <a class="projects-link" href="https://katsiarynazaviadzeyeva.github.io/product-landing-page/"
+                        target="_blank">
+                        <figure>
+                            <img class="projects-link" src="./assets/pictures/original_trombones.jpg"
+                                alt="picture of my project landing page" width="20%">
+                            <figcaption>Original trombones</figcaption>
+                        </figure>
+                    </a>
+                    <a class="projects-link" href="https://katsiarynazaviadzeyeva.github.io/tribute-page/"
+                        target="_blank">
+                        <figure>
+                            <img class="projects-link" src="./assets/pictures/tribute_page.jpg"
+                                alt="picture of my project tribute page" width="20%">
+                            <figcaption>Tribute page</figcaption>
+                        </figure>
+                    </a>
+                    <a class="projects-link"
+                        href="https://katsiarynazaviadzeyeva.github.io/technical-documentation-page/" target="_blank">
+                        <figure>
+                            <img class="projects-link" src="./assets/pictures/js_documentation.jpg"
+                                alt="picture of my project java script documentation" width="20%">
+                            <figcaption>Technical documentation page</figcaption>
+                        </figure>
+                    </a>
+                    <a class="projects-link"
+                        href="https://katsiarynazaviadzeyeva.github.io/frontend-marathon/01-cards/index.html"
+                        target="_blank">
+                        <figure>
+                            <img class="project-img" src="./assets/pictures/cards.jpg" alt="picture of my project cards"
+                                width="20%">
+                            <figcaption>Cards</figcaption>
+                        </figure>
+                    </a>
+                    <a class="projects-link"
+                        href="https://katsiarynazaviadzeyeva.github.io/frontend-marathon/03-slider/index.html"
+                        target="_blank">
+                        <figure>
+                            <img class="project-img" src="./assets/pictures/slider.jpg"
+                                alt="picture of my project slider" width="20%">
+                            <figcaption>Slider</figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </section>
+            <section id="contact" class="contact">
+                <h2 class="contact-title">Let's work together...</h2>
+                <div class="contact-links">
+                    <a class="contact-button" href="https://www.facebook.com/katerina.zavedeeva" target="_blank">
+                        <i class="fa fa-facebook-f"></i>Facebook
+                    </a>
+                    <a id="profile-link" class="contact-button" href="https://github.com/KatsiarynaZaviadzeyeva"
+                        target="_blank">
+                        <i class="fa fa-github"></i>GitHub
+                    </a>
+                    <a class="contact-button" href="mailto:katsiarynaappleby@gmail.com" target="_blank">
+                        <i class="fas fa-envelope"></i> Send me a mail
+                    </a>
+                    <a class="contact-button" href="tel:+447305345290" target="_blank">
+                        <i class="fas fa-mobile-alt"></i> Call me
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer-paragraph">Katsiaryna Zaviadzeyeva</p>
+            <p class="footer-paragraph">&copy; 2024</p>
+        </footer>
+    </div>
 </body>
 
 </html>
