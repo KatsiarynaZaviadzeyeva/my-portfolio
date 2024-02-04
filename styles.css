@@ -1,0 +1,72 @@
+/* Custom properties/variables */
+:root {
+    --primary-color: #112957;
+    --secondary-color: #A8AABC;
+    --addition-color: #EE796A;
+    --text-color: #F1F1E6;
+}
+
+/* Common styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    background: var(--primary-color);
+    color: var(--text-color);
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 {
+    width: 55rem;
+    color: var(--addition-color);
+    font-size: 4.5rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2 {
+    color: var(--addition-color);
+    font-size: 4rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:focus,
+a:hover {
+    color: #A8AABC;
+}
+
+a:active {
+    color: #EE796A;
+}
+
+img {
+    display: block;
+    /*width: 100%;*/
+  }
+
+.wrapper {
+    max-width: 1220px;
+    width: 100%;
+    margin: auto;
+}
