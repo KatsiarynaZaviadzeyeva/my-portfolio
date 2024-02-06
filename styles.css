@@ -217,3 +217,16 @@ cards::after {
 .contact-button:hover {
     color: var(--link-color);
 }
+
+/* footer styles */
+
+.footer {
+    border-top: 1px solid var(--addition-color);
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-paragraph {
+    font-size: 1.6rem;
+}
