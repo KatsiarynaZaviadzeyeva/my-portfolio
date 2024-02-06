@@ -5,6 +5,7 @@
     --secondary-color: #A8AABC;
     --addition-color: #EE796A;
     --text-color: #F1F1E6;
+    --link-color: #FFB55E;
 }
 
 /* common styles */
@@ -40,10 +41,13 @@ h1 {
 }
 
 h2 {
+    /*margin: 0 auto;*/
     color: var(--addition-color);
-    font-size: 4rem;
+    font-size: 4.2rem;
     font-weight: 700;
     font-style: normal;
+    padding-bottom: 50px;
+    text-align: center;
 }
 
 p {
@@ -61,13 +65,13 @@ a {
     color: var(--text-color);
 }
 
-a:focus,
 a:hover {
-    color: #A8AABC;
+    color: #112957;
 }
 
-a:active {
-    color: #EE796A;
+a:active,
+a:focus {
+    color: #FFB55E;
 }
 
 img {
@@ -76,9 +80,12 @@ img {
 }
 
 .wrapper {
-    max-width: 1220px;
     width: 100%;
     margin: auto;
+}
+
+.section {
+    max-width: 1220px;
 }
 
 /* header styles */
@@ -106,6 +113,15 @@ img {
     font-size: 3rem;
 }
 
+.navigation-link>li>a:hover {
+    color: var(--primary-color);
+}
+
+.navigation-link>li>a:focus,
+.navigation-link>li>a:active {
+    color: var(--link-color);
+}
+
 .navigation-link>li:nth-child(2) {
     margin-left: 9rem;
     margin-right: 9rem;
@@ -116,7 +132,7 @@ img {
 .welcome {
     padding: 8rem 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -124,11 +140,13 @@ img {
     width: 30rem;
     border-radius: 50%;
     box-shadow: 1px 1px 4px 4px var(--secondary-color);
+    margin-right: 15px;
 }
 
 .welcome-info {
     padding: 8rem 0;
     width: 50%;
+    margin-left: 15px;
 }
 
 .welcome-paragraph {
@@ -142,4 +160,34 @@ img {
     padding-top: 15px;
     text-indent: inherit;
     text-align: center;
+}
+
+/* projects section styles */
+
+.projects {
+    background-color: var(--secondary-color);
+    padding: 50px 60px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 3rem;
+}
+
+cards::after {
+    content: "";
+    width: 35rem;
+}
+
+.projects-img {
+    width: 100%;
+    max-width: 35rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 10px;
 }
