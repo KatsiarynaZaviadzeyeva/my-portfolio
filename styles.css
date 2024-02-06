@@ -1,11 +1,12 @@
 /* custom properties/variables */
 
 :root {
-    --primary-color: #112957;
-    --secondary-color: #A8AABC;
+    --primary-color: #455577;
+    --secondary-color: #F1F1E6;
     --addition-color: #EE796A;
-    --text-color: #F1F1E6;
+    --title-color: #E7803E;
     --link-color: #FFB55E;
+    --shadow-color: #747687;
 }
 
 /* common styles */
@@ -25,7 +26,7 @@ body {
     font-size: 2rem;
     font-family: 'Lato', sans-serif;
     background: var(--primary-color);
-    color: var(--text-color);
+    color: var(--secondary-color);
     font-weight: 700;
     font-style: normal;
 }
@@ -33,7 +34,7 @@ body {
 h1 {
     margin: 0 auto;
     width: 55rem;
-    color: var(--addition-color);
+    color: var(--title-color);
     font-size: 4.5rem;
     font-weight: 700;
     font-style: normal;
@@ -41,7 +42,6 @@ h1 {
 }
 
 h2 {
-    /*margin: 0 auto;*/
     color: var(--addition-color);
     font-size: 4.2rem;
     font-weight: 700;
@@ -62,21 +62,21 @@ ul {
 
 a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--secondary-color);
 }
 
 a:hover {
-    color: #112957;
+    color: var(--primary-color);
 }
 
 a:active,
 a:focus {
-    color: #FFB55E;
+    color: var(--link-color);
 }
 
 img {
     display: block;
-    /*width: 100%;*/
+    width: 100%;
 }
 
 .wrapper {
@@ -93,7 +93,7 @@ img {
 .header {
     padding: 42px 0;
     background-color: var(--secondary-color);
-    box-shadow: 0 2px 0 #747687;
+    box-shadow: 0 2px 0 var(--shadow-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -139,7 +139,7 @@ img {
 .avatar {
     width: 30rem;
     border-radius: 50%;
-    box-shadow: 1px 1px 4px 4px var(--secondary-color);
+    box-shadow: 1px 1px 4px 4px var(--shadow-color);
     margin-right: 15px;
 }
 
@@ -155,7 +155,7 @@ img {
 }
 
 .welcome-paragraph.colored {
-    color: var(--addition-color);
+    color: var(--title-color);
     font-size: 4rem;
     padding-top: 15px;
     text-indent: inherit;
@@ -190,4 +190,30 @@ cards::after {
     height: 15rem;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.card-caption {
+    color: var(--shadow-color);
+    transition: transform 0.3 ease-in-out;
+}
+
+.card-caption:hover {
+    transform: scaleY(1.1);
+    color: #455577;
+}
+
+/* contact section styles */
+
+.contact {
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-button:hover {
+    color: var(--link-color);
 }
